@@ -11,16 +11,19 @@ var session = require('express-session');
 var bodyParser = require('body-parser');
 var multer = require('multer');
 var errorHandler = require('errorhandler');
-
+var mongoose = require("mongoose")
 var app = express();
-
+var db = mongoose.connection
+mongoose.connect("mongodb://127.0.0.1/test")
+db.once("open",function(){
+  console.log("db connected")
+})
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
-//app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use(logger('dev'));
 app.use(methodOverride());
 app.use(session({ resave: true,

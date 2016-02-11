@@ -2,7 +2,7 @@
 
 var gulp = require('gulp')
 var server  = require('gulp-live-server')
-var gutil = require("gulp-util");
+var gutil  = require("gulp-util");
 var webpack = require("webpack")
 var webpackConfig = require("./webpack.config.js")
 
@@ -30,6 +30,9 @@ gulp.task("watch",function(){
     gulp.start("restart")
   })
   gulp.watch("routes/**/*.js",function(){
+    gulp.start("restart")
+  })
+  gulp.watch("upload/**/*.js",function(){
     gulp.start("restart")
   })
   gulp.watch("src/**/*.jsx",["webpack"])

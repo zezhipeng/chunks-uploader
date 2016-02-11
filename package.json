@@ -6,6 +6,7 @@
     "start": "node bin/www"
   },
   "dependencies": {
+    "bluebird": "^3.1.5",
     "body-parser": "^1.14.2",
     "connect-mongo": "^1.1.0",
     "errorhandler": "^1.1.1",
@@ -32,6 +33,6 @@
     "gulp-util": "^3.0.7",
     "jsx-loader": "^0.13.2",
     "webpack": "^1.12.12",
-    "webpack-dev-server": "^1.14.1",
+    "webpack-dev-server": "^1.14.1"
   }
 }

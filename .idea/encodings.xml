@@ -4,5 +4,7 @@
     <file url="file://$PROJECT_DIR$/gulpfile.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/node_modules/debug/History.md" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/package.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/app.jsx" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/upload/index.js" charset="UTF-8" />
   </component>
 </project>
